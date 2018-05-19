@@ -15,6 +15,6 @@
 结合block和inline的同行特性，可以设置宽高和margin，padding，相邻元素会排在一行。
 
 #### 3.box-shadow 和 text-shadow
-box-shadow: 5px 5px 5px 20px #000 inset|outset (水平阴影，垂直阴影，模糊距离，阴影大小，颜色，内外阴影)
-text-shadow: 1px 1px 1px #000 (水平阴影，垂直阴影，模糊距离，颜色)
+* box-shadow: 5px 5px 5px 20px #000 inset|outset (水平阴影，垂直阴影，模糊距离，阴影大小，颜色，内外阴影)
+* text-shadow: 1px 1px 1px #000 (水平阴影，垂直阴影，模糊距离，颜色)
 
