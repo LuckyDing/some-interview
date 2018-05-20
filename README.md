@@ -18,3 +18,56 @@
 * box-shadow: 5px 5px 5px 20px #000 inset|outset (水平阴影，垂直阴影，模糊距离，阴影大小，颜色，内外阴影)
 * text-shadow: 1px 1px 1px #000 (水平阴影，垂直阴影，模糊距离，颜色)
 
+#### 4.浏览器的内核
+IE(IE内核) 火狐(Gecko) 谷歌(Webkit) Opear(presto)
+
+#### 5.css选择符有哪些？哪些可以继承？
+* 1. ID选择器（#）
+* 2. 类选择器（.）
+* 3. 标签选择器（div,p）
+* 4. 相邻选择器（div+p）
+* 5. 子选择器（div>p）
+* 6. 后代选择器 (li a)
+* 7. 伪类选择器（a:hover,li:after）
+* 8. 属性选择器（div[color="red"]）
+
+可继承样式：font-family，font-size,color
+不可继承样式：margin,padding,width,height,border
+
+#### 6.水平垂直居中的方法有哪些
+
+* 1.确定宽高，设置位置，设置层的外边距。
+```
+  div{
+    position: absolute|relative;
+    height: 300px;
+    width: 400px;
+    top:50%;
+    left:50%;
+    margin: -150px 0 0 -200px;
+  }
+```
+* 2. 绝对定位，transform属性
+```
+  div{
+    position: absolute;
+    height:100px;
+    width:100px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+  }
+```
+* 3. flex布局
+```
+  .content{
+    display:flex;
+    align-items: center;     /* 垂直 */
+    justify-content: center;      /* 水平 */
+   }
+   .content div{
+    ...
+   }
+```
+
+持续更新中...
