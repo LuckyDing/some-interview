@@ -69,5 +69,18 @@ IE(IE内核) 火狐(Gecko) 谷歌(Webkit) Opear(presto)
     ...
    }
 ```
-
+#### 7. 文字超出部分省略号
+* 单行
+```
+overflow:hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+```
+* 多行
+```
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+overflow:hidden;
+```
 持续更新中...
